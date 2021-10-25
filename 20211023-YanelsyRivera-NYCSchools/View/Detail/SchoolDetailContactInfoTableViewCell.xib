@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="218" id="54g-Yh-a3K" customClass="SchoolDetailContactInfoTableViewCell" customModule="_0211023_YanelsyRivera_NYCSchools" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="218"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="54g-Yh-a3K" id="j5b-b3-b70">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="218"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wpr-op-S69">
+                        <rect key="frame" x="30" y="31" width="354" height="29"/>
+                        <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="26"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YDM-Io-wMq">
+                        <rect key="frame" x="20" y="80" width="374" height="117"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HXh-gI-Ig1">
+                                <rect key="frame" x="10" y="8" width="354" height="19"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="phone" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="91O-ZA-a18">
+                                <rect key="frame" x="37" y="42" width="327" height="17"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="email" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R8Q-0g-7Aa">
+                                <rect key="frame" x="37" y="66" width="327" height="17"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="website" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u0c-rz-EbI">
+                                <rect key="frame" x="37" y="91" width="327" height="17"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="phone.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="wvL-2c-wV0">
+                                <rect key="frame" x="10" y="43.5" width="17" height="14.5"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="V5e-Cq-p2G"/>
+                                    <constraint firstAttribute="width" constant="17" id="uTj-Dm-gHn"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="envelope" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="Cw8-dv-dX8">
+                                <rect key="frame" x="10" y="67.5" width="17" height="13.5"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="17" id="Fea-Qy-ukn"/>
+                                    <constraint firstAttribute="height" constant="17" id="nRG-42-pBI"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="at.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="j2f-Fr-AoG">
+                                <rect key="frame" x="10" y="90.5" width="17" height="16"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="17" id="ZJr-nu-kcf"/>
+                                    <constraint firstAttribute="width" constant="17" id="tHu-Lp-iLG"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="u0c-rz-EbI" secondAttribute="bottom" constant="9" id="0nn-jQ-bgT"/>
+                            <constraint firstItem="HXh-gI-Ig1" firstAttribute="top" secondItem="YDM-Io-wMq" secondAttribute="top" constant="8" id="3HC-mZ-7y0"/>
+                            <constraint firstItem="j2f-Fr-AoG" firstAttribute="top" secondItem="R8Q-0g-7Aa" secondAttribute="bottom" constant="7" id="BIh-64-esj"/>
+                            <constraint firstAttribute="trailing" secondItem="u0c-rz-EbI" secondAttribute="trailing" constant="10" id="CZg-Ha-DcE"/>
+                            <constraint firstItem="u0c-rz-EbI" firstAttribute="leading" secondItem="j2f-Fr-AoG" secondAttribute="trailing" constant="10" id="Chd-7z-VYr"/>
+                            <constraint firstAttribute="trailing" secondItem="R8Q-0g-7Aa" secondAttribute="trailing" constant="10" id="O4n-3K-7Oi"/>
+                            <constraint firstItem="R8Q-0g-7Aa" firstAttribute="top" secondItem="91O-ZA-a18" secondAttribute="bottom" constant="7" id="SQh-Fk-M6v"/>
+                            <constraint firstItem="j2f-Fr-AoG" firstAttribute="leading" secondItem="YDM-Io-wMq" secondAttribute="leading" constant="10" id="SoQ-0m-DyN"/>
+                            <constraint firstItem="Cw8-dv-dX8" firstAttribute="top" secondItem="91O-ZA-a18" secondAttribute="bottom" constant="7" id="TqI-0q-Oqj"/>
+                            <constraint firstAttribute="trailing" secondItem="HXh-gI-Ig1" secondAttribute="trailing" constant="10" id="TwH-9N-y9F"/>
+                            <constraint firstAttribute="trailing" secondItem="91O-ZA-a18" secondAttribute="trailing" constant="10" id="bCm-05-eYq"/>
+                            <constraint firstItem="Cw8-dv-dX8" firstAttribute="leading" secondItem="YDM-Io-wMq" secondAttribute="leading" constant="10" id="caL-fo-Vub"/>
+                            <constraint firstItem="R8Q-0g-7Aa" firstAttribute="leading" secondItem="Cw8-dv-dX8" secondAttribute="trailing" constant="10" id="crR-hQ-Jyo"/>
+                            <constraint firstItem="HXh-gI-Ig1" firstAttribute="leading" secondItem="YDM-Io-wMq" secondAttribute="leading" constant="10" id="f4N-mo-Zbu"/>
+                            <constraint firstItem="wvL-2c-wV0" firstAttribute="leading" secondItem="YDM-Io-wMq" secondAttribute="leading" constant="10" id="ffb-UU-9LH"/>
+                            <constraint firstItem="wvL-2c-wV0" firstAttribute="top" secondItem="HXh-gI-Ig1" secondAttribute="bottom" constant="15" id="llu-p4-2dE"/>
+                            <constraint firstItem="91O-ZA-a18" firstAttribute="top" secondItem="HXh-gI-Ig1" secondAttribute="bottom" constant="15" id="mgY-nz-4bL"/>
+                            <constraint firstItem="91O-ZA-a18" firstAttribute="leading" secondItem="wvL-2c-wV0" secondAttribute="trailing" constant="10" id="u9T-Nr-m8O"/>
+                            <constraint firstItem="u0c-rz-EbI" firstAttribute="top" secondItem="R8Q-0g-7Aa" secondAttribute="bottom" constant="8" id="xM1-df-scK"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" systemColor="systemBlueColor"/>
+                <constraints>
+                    <constraint firstItem="Wpr-op-S69" firstAttribute="leading" secondItem="j5b-b3-b70" secondAttribute="leadingMargin" constant="10" id="3MD-MM-wk3"/>
+                    <constraint firstItem="Wpr-op-S69" firstAttribute="top" secondItem="j5b-b3-b70" secondAttribute="topMargin" constant="20" id="5RT-ow-SiK"/>
+                    <constraint firstItem="YDM-Io-wMq" firstAttribute="leading" secondItem="j5b-b3-b70" secondAttribute="leading" constant="20" id="WWZ-jv-6Kb"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Wpr-op-S69" secondAttribute="trailing" constant="10" id="XVU-e9-6Ad"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="YDM-Io-wMq" secondAttribute="bottom" constant="10" id="YKe-BB-3wh"/>
+                    <constraint firstItem="YDM-Io-wMq" firstAttribute="top" secondItem="Wpr-op-S69" secondAttribute="bottom" constant="20" id="ajl-P0-qgu"/>
+                    <constraint firstAttribute="trailing" secondItem="YDM-Io-wMq" secondAttribute="trailing" constant="20" id="qkp-H7-EuN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="emailLabel" destination="R8Q-0g-7Aa" id="Nlz-j1-sfx"/>
+                <outlet property="phoneLabel" destination="91O-ZA-a18" id="B0c-Zu-GJZ"/>
+                <outlet property="schoolNameLabel" destination="Wpr-op-S69" id="kfR-Dn-swt"/>
+                <outlet property="websiteLabel" destination="u0c-rz-EbI" id="whD-qp-b8v"/>
+            </connections>
+            <point key="canvasLocation" x="141" y="60"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="at.circle.fill" catalog="system" width="128" height="121"/>
+        <image name="envelope" catalog="system" width="128" height="93"/>
+        <image name="phone.fill" catalog="system" width="128" height="114"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cxw-tE-7C4">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="kFD-kk-Bhf">
+            <objects>
+                <navigationController id="cxw-tE-7C4" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="QC0-VK-LHR">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" systemColor="systemBlueColor"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vRt-0r-ItP" kind="relationship" relationship="rootViewController" id="GhY-hg-Xgm"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cg5-g2-MCC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-488" y="-95"/>
+        </scene>
+        <!--NYC High Schools-->
+        <scene sceneID="jQC-CH-bhf">
+            <objects>
+                <viewController id="vRt-0r-ItP" customClass="HighSchoolsListViewController" customModule="_0211023_YanelsyRivera_NYCSchools" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="94z-sj-MwD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="Write a high school name" translatesAutoresizingMaskIntoConstraints="NO" id="pco-3J-iIg">
+                                <rect key="frame" x="0.0" y="88" width="414" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="vRt-0r-ItP" id="T3u-7S-jGh"/>
+                                </connections>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="172" sectionHeaderHeight="1" estimatedSectionHeaderHeight="1" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZJE-oD-eL4">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <inset key="separatorInset" minX="9" minY="0.0" maxX="9" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="vRt-0r-ItP" id="YRp-LQ-ibD"/>
+                                    <outlet property="delegate" destination="vRt-0r-ItP" id="Vff-7F-2hC"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Mab-8A-D8K"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="pco-3J-iIg" firstAttribute="leading" secondItem="Mab-8A-D8K" secondAttribute="leading" id="4dc-0A-SV7"/>
+                            <constraint firstItem="ZJE-oD-eL4" firstAttribute="top" secondItem="Mab-8A-D8K" secondAttribute="top" id="8Yi-7Z-aFB"/>
+                            <constraint firstItem="pco-3J-iIg" firstAttribute="top" secondItem="Mab-8A-D8K" secondAttribute="top" id="CV3-qm-GRl"/>
+                            <constraint firstAttribute="bottom" secondItem="ZJE-oD-eL4" secondAttribute="bottom" id="D1x-bN-hzf"/>
+                            <constraint firstItem="ZJE-oD-eL4" firstAttribute="leading" secondItem="Mab-8A-D8K" secondAttribute="leading" id="bRA-lY-MXw"/>
+                            <constraint firstItem="ZJE-oD-eL4" firstAttribute="trailing" secondItem="Mab-8A-D8K" secondAttribute="trailing" id="eoV-z1-RuD"/>
+                            <constraint firstItem="pco-3J-iIg" firstAttribute="trailing" secondItem="Mab-8A-D8K" secondAttribute="trailing" id="ypw-YC-Y1Z"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="NYC High Schools" id="BKb-qK-mRw"/>
+                    <connections>
+                        <outlet property="tableView" destination="ZJE-oD-eL4" id="isC-rn-qNm"/>
+                        <outlet property="tableViewTopConstraint" destination="8Yi-7Z-aFB" id="WqR-F4-48b"/>
+                        <segue destination="quS-aP-ZTE" kind="show" identifier="detailSegue" id="1Ix-fX-Kyf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="S3u-cD-lvF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="468.11594202898556" y="-91.071428571428569"/>
+        </scene>
+        <!--High School Detail View Controller-->
+        <scene sceneID="Nrz-N4-gLs">
+            <objects>
+                <tableViewController interfaceStyle="light" id="quS-aP-ZTE" customClass="HighSchoolDetailViewController" customModule="_0211023_YanelsyRivera_NYCSchools" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="228" sectionHeaderHeight="28" sectionFooterHeight="28" id="974-ff-nUQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <connections>
+                            <outlet property="dataSource" destination="quS-aP-ZTE" id="5fn-be-PIX"/>
+                            <outlet property="delegate" destination="quS-aP-ZTE" id="smg-ME-01b"/>
+                        </connections>
+                    </tableView>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <segue destination="Sda-g6-d9q" kind="showDetail" identifier="mapSegue" id="I7s-Fx-taS"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AIg-Ja-2nm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1304.3478260869567" y="-91.071428571428569"/>
+        </scene>
+        <!--High School Map View Controller-->
+        <scene sceneID="xvW-Uz-sNS">
+            <objects>
+                <viewController id="Sda-g6-d9q" customClass="HighSchoolMapViewController" customModule="_0211023_YanelsyRivera_NYCSchools" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aaw-f6-Q58">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="KhP-Hv-q0d">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Sda-g6-d9q" id="Rmp-eo-t1S"/>
+                                </connections>
+                            </mapView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="IPE-S9-bhK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="KhP-Hv-q0d" firstAttribute="leading" secondItem="IPE-S9-bhK" secondAttribute="leading" id="P7T-Zo-w96"/>
+                            <constraint firstItem="IPE-S9-bhK" firstAttribute="trailing" secondItem="KhP-Hv-q0d" secondAttribute="trailing" id="fDy-ZV-FaO"/>
+                            <constraint firstItem="KhP-Hv-q0d" firstAttribute="top" secondItem="IPE-S9-bhK" secondAttribute="top" id="hLJ-Zr-0kv"/>
+                            <constraint firstItem="IPE-S9-bhK" firstAttribute="bottom" secondItem="KhP-Hv-q0d" secondAttribute="bottom" id="u0M-p0-INZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="KhP-Hv-q0d" id="MGN-2Y-BDw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="y1J-pG-icM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2032" y="-93"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

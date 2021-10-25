@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="335" id="AgX-1b-LIv" customClass="SchoolDetailAddressTableViewCell" customModule="_0211023_YanelsyRivera_NYCSchools" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="173"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="AgX-1b-LIv" id="uzK-0u-Mo1">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="173"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="r3c-Lt-n0t">
+                        <rect key="frame" x="20" y="21" width="374" height="131.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="30" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dZm-eD-qmI">
+                                <rect key="frame" x="10" y="47" width="354" height="14.5"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="13"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xmp-74-nQw">
+                                <rect key="frame" x="10" y="8" width="354" height="19"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ey-QG-IBf">
+                                <rect key="frame" x="112" y="81.5" width="150" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Qd1-pK-ITJ"/>
+                                    <constraint firstAttribute="width" constant="150" id="muC-QD-L35"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="15"/>
+                                <color key="tintColor" systemColor="systemBlueColor"/>
+                                <inset key="titleEdgeInsets" minX="8" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="See in Map" image="map" catalog="system">
+                                    <color key="titleColor" systemColor="labelColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="openMapView" destination="AgX-1b-LIv" eventType="touchUpInside" id="YMd-7G-2o1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="1Ey-QG-IBf" secondAttribute="bottom" constant="10" id="4q3-Uj-Vdo"/>
+                            <constraint firstItem="1Ey-QG-IBf" firstAttribute="top" secondItem="dZm-eD-qmI" secondAttribute="bottom" constant="20" id="Fus-hb-nTQ"/>
+                            <constraint firstItem="dZm-eD-qmI" firstAttribute="leading" secondItem="r3c-Lt-n0t" secondAttribute="leading" constant="10" id="Iqe-Cs-MRL"/>
+                            <constraint firstItem="Xmp-74-nQw" firstAttribute="leading" secondItem="r3c-Lt-n0t" secondAttribute="leading" constant="10" id="KoU-sT-av9"/>
+                            <constraint firstAttribute="trailing" secondItem="Xmp-74-nQw" secondAttribute="trailing" constant="10" id="RIT-6k-l0X"/>
+                            <constraint firstItem="1Ey-QG-IBf" firstAttribute="centerX" secondItem="r3c-Lt-n0t" secondAttribute="centerX" id="WEK-Hd-aQ0"/>
+                            <constraint firstItem="Xmp-74-nQw" firstAttribute="top" secondItem="r3c-Lt-n0t" secondAttribute="top" constant="8" id="f5p-nR-NB9"/>
+                            <constraint firstAttribute="trailing" secondItem="dZm-eD-qmI" secondAttribute="trailing" constant="10" id="nVa-Zs-MJi"/>
+                            <constraint firstItem="dZm-eD-qmI" firstAttribute="top" secondItem="Xmp-74-nQw" secondAttribute="bottom" constant="20" id="zf5-7B-aAn"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="r3c-Lt-n0t" firstAttribute="top" secondItem="uzK-0u-Mo1" secondAttribute="topMargin" constant="10" id="85o-5z-gyV"/>
+                    <constraint firstAttribute="trailing" secondItem="r3c-Lt-n0t" secondAttribute="trailing" constant="20" id="Xz0-sF-5Hv"/>
+                    <constraint firstAttribute="bottom" secondItem="r3c-Lt-n0t" secondAttribute="bottom" constant="20.5" id="knc-xv-M4L"/>
+                    <constraint firstItem="r3c-Lt-n0t" firstAttribute="leading" secondItem="uzK-0u-Mo1" secondAttribute="leading" constant="20" id="uUc-lo-7VL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addressLabel" destination="dZm-eD-qmI" id="s5F-m0-cA7"/>
+                <outlet property="shadowView" destination="r3c-Lt-n0t" id="axh-1K-KW3"/>
+            </connections>
+            <point key="canvasLocation" x="140.57971014492756" y="78.013392857142847"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="map" catalog="system" width="128" height="110"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
